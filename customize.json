@@ -26,23 +26,23 @@
 		{ "selector": "#access .menu ul > li > a", "type": "color", "label": "Top item color" },
 		{ "selector": "#access .menu ul > li > a:hover", "type": "color", "label": "Top item hover color" },
 		{ "selector": "#access .menu ul > li > a", "type": "background-color", "label": "Top item background color" },
-		{ "selector": "#access .menu ul > li > a:hover", "type": "background-color", "label": "Top item hover background color", "template": "$selector { background-color: $value; background-image: none; }" },
+		{ "selector": "#access .menu ul > li > a:hover", "type": "background-color", "label": "Top item hover background color" },
 		/* Sub menu items */
 		{ "selector": "#access ul ul a", "type": "text", "label": "Submenu item" },
 		{ "selector": "#access .menu ul ul > li a", "type": "color", "label": "Submenu item color" },
 		{ "selector": "#access .menu ul ul > li a:hover", "type": "color", "label": "Submenu item hover color" },
 		{ "selector": "#access .menu ul ul > li a", "type": "background-color", "label": "Submenu item background color" },
-		{ "selector": "#access .menu ul ul > li a:hover", "type": "background-color", "label": "Submenu item hover background color", "template": "$selector { background-color: $value; background-image: none; }" },
+		{ "selector": "#access .menu ul ul > li a:hover", "type": "background-color", "label": "Submenu item hover background color" },
 		{}
 	],
 	/* Create multiple sidebar sections if appropriate for the theme */
 	"Sidebar": [
-		{ "selector": "#primary.widget-area ul > li > h3", "type": "text", "label": "Widget title" },
-		{ "selector": "#primary.widget-area ul > li > h3", "type": "color", "label": "Widget title color" },
-		{ "selector": "#primary.widget-area ul ul > li", "type": "text", "label": "Widget content" },
-		{ "selector": "#primary.widget-area ul ul > li a", "type": "color", "label": "Widget content color" },
-		{ "selector": "#primary.widget-area ul ul > li", "type": "color", "label": "Widget link color" },
-		{ "selector": "#primary.widget-area ul ul > li > a:hover", "type": "color", "label": "Widget link hover color" },
+		{ "selector": "#primary ul > li > h3", "type": "text", "label": "Widget title" },
+		{ "selector": "#primary ul > li > h3", "type": "color", "label": "Widget title color" },
+		{ "selector": "#primary ul ul > li", "type": "text", "label": "Widget content" },
+		{ "selector": "#primary ul ul > li", "type": "color", "label": "Widget content color" },
+		{ "selector": "#primary ul ul > li a", "type": "color", "label": "Widget link color" },
+		{ "selector": "#primary ul ul > li > a:hover", "type": "color", "label": "Widget link hover color" },
 		{}
 	],
 	"Entry Content": [
