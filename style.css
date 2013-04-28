@@ -9,4 +9,6 @@
 
 #site-title, #site-description { width: auto; }
 
-.entry-utility { line-height: 1.5; }
+.entry-utility, #respond p, #respond code, #respond textarea { line-height: 1.5; }
+
+#site-info, #site-generator { width: auto; line-height: 1.5;}

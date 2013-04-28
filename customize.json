@@ -17,6 +17,7 @@
 		{ "selector": "#s", "type": "color", "label": "Form border color", "template": "$selector { border-color: $value; }" },
 		{ "selector": "#searchsubmit", "type": "text", "label": "Button" },
 		{ "selector": "#searchsubmit", "type": "color", "label": "Button color" },
+		{ "selector": "#searchsubmit", "type": "background-color", "label": "Button background color" },
 		{}
 	],
 	"Menu: Primary": [
@@ -145,7 +146,7 @@
 		{ "selector": "#comments-title", "type": "text", "label": "List title" },
 		{ "selector": "#comments-title", "type": "color", "label": "List title color" },
 		{ "selector": "#comments .commentlist .comment-meta", "type": "text", "label": "Meta" },
-		{ "selector": "#comments .commentlist .comment-meta", "type": "color", "label": "Meta color" },
+		/* { "selector": "#comments .commentlist .comment-meta", "type": "color", "label": "Meta color" }, */
 		{ "selector": "#comments .commentlist .comment-meta a", "type": "color", "label": "Meta link color" },
 		{ "selector": "#comments .comment-meta a:hover", "type": "color", "label": "Meta link hover color" },
 		{ "selector": "#comments a.comment-reply-link", "type": "text", "label": "Reply link" },
@@ -156,33 +157,33 @@
 		{}
 	],
 	"Comment Response": [
+		{ "selector": "#respond", "type": "color", "label": "Top border color", "template": "$selector { border-top-color: $value; }" },
 		{ "selector": "#respond", "type": "background-color", "label": "Background color" },
 		{ "selector": "#respond #reply-title", "type": "text", "label": "Title" },
 		{ "selector": "#respond #reply-title", "type": "color", "label": "Title color" },
-		{ "selector": "#respond p", "type": "text", "label": "Description" },
-		{ "selector": "#respond p", "type": "color", "label": "Description color" },
-		{ "selector": "#commentform a", "type": "text", "label": "Description link" },
+		{ "selector": "#respond p, #respond code", "type": "text", "label": "Description" },
+		{ "selector": "#respond p, #respond code", "type": "color", "label": "Description color" },
+		/* { "selector": "#commentform a", "type": "text", "label": "Description link" }, */
 		{ "selector": "#commentform a", "type": "color", "label": "Description link color" },
 		{ "selector": "#commentform a:hover", "type": "color", "label": "Description link hover color" },
-		{ "selector": "#respond .comment-form-comment label", "type": "text", "label": "Label" },
-		{ "selector": "#respond label", "type": "color", "label": "Label color" },
-		{ "selector": "#respond label", "type": "background-color", "label": "Label background color" },
-		{ "selector": "#respond textarea", "type": "text", "label": "Response" },
-		{ "selector": "#respond textarea", "type": "color", "label": "Response color" },
-		{ "selector": "#respond textarea", "type": "background-color", "label": "Response background color" },
-		{ "selector": "#respond textarea:focus", "type": "background-color", "label": "Response focused background color" },
-		{ "selector": "#respond textarea", "type": "color", "label": "Response border color", "template": "$selector { border-color: $value }" },
-		{ "selector": "#respond input#submit", "type": "text", "label": "Submit button" },
-		{ "selector": "#respond input#submit", "type": "color", "label": "Submit button color" },
-		{ "selector": "#respond input#submit", "type": "background-color", "label": "Submit button background color" },
+		{ "selector": "#respond label", "type": "text", "label": "Form label" },
+		{ "selector": "#respond label", "type": "color", "label": "Form label color" },
+		{ "selector": "#respond textarea", "type": "text", "label": "Form" },
+		{ "selector": "#respond textarea", "type": "color", "label": "Form color" },
+		{ "selector": "#respond textarea", "type": "background-color", "label": "Form background color" },
+		{ "selector": "#respond textarea:focus", "type": "background-color", "label": "Form focused background color" },
+		{ "selector": "#respond textarea", "type": "color", "label": "Form border color", "template": "$selector { border-color: $value }" },
+		{ "selector": "#respond #submit", "type": "text", "label": "Submit button" },
+		{ "selector": "#respond #submit", "type": "color", "label": "Submit button color" },
+		{ "selector": "#respond #submit", "type": "background-color", "label": "Submit button background color" },
 		{}
 	],
 	"Footer": [
-		{ "selector": "#site-generator", "type": "background-color", "label": "Background color" },
-		{ "selector": "#site-generator", "type": "color", "label": "Top border color", "template": "$selector { border-top-color: $value; }" },
-		{ "selector": "#site-generator", "type": "text", "label": "Footer" },
-		{ "selector": "#site-generator a", "type": "color", "label": "Footer link color" },
-		{ "selector": "#site-generator a:hover", "type": "color", "label": "Footer link hover color" },
+		{ "selector": "#footer", "type": "background-color", "label": "Background color" },
+		{ "selector": "#colophon", "type": "color", "label": "Top border color", "template": "$selector { border-top-color: $value; }" },
+		{ "selector": "#footer, #site-info", "type": "text", "label": "Footer" },
+		{ "selector": "#footer a", "type": "color", "label": "Footer link color" },
+		{ "selector": "#footer a:hover", "type": "color", "label": "Footer link hover color" },
 		{}
 	]
 }
