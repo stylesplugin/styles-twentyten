@@ -1,0 +1,10 @@
+/* Header clearfix */
+#header:before, #header:after {content: ''; display: table; }
+#header:after { clear: both; } 
+#header { zoom: 1; } 
+
+/* Replace margin with padding for background-colors */
+.styles #wrapper { padding-left:0; padding-right:0; width: 980px;} 
+.styles #header, .styles #main { padding-left: 20px; padding-right:20px; }
+
+#site-title, #site-description { width: auto; }

@@ -1,27 +1,9 @@
-/*
-	Selectors and syntax comments from TwentyEleven theme.
-	Please revise selectors and options, then remove uneccesary comments.
-*/
 {
 	"Header": [
-		/*     selector: CSS selector of the element to be edited.
-									 All selectors are prepended with ".styles " to increase specificity. */
-		/*     type:     Type of user interface to display and CSS to output. Can be: color, background-color, text */
-		/*     label:    Name of this element to display in the user interface. First word only should be capitalized */  
-		{ "selector": "#header", "type": "background-color", "label": "Background color", "template": "%1$s { background-color: %2$s; height: 292px; border-top: 2px solid;}"},
-
-			
-		/*     
-			template:     (optional) Used to override CSS output. Uses PHP sprintf syntax, where argument 1 is a CSS selector, and argument 2 is the value. 
-							In this case, template is being used to apply this "color" as a border-top-color.
-			border color: This is a setting specific to the TwentyEleven theme. Remove or change appropriate to the theme.
-		*/
-		{ "selector": "#header", "type": "color", "label": "Top border color", "template": "%s { border-top-color: %s; }" },
-		/* Site title text may not be available in themes that use a logo instead. Modify entries appropriately for the individual theme. */
+		{ "selector": "#header", "type": "background-color", "label": "Background color" },
 		{ "selector": "#site-title a", "type": "text", "label": "Title" },
 		{ "selector": "#site-title a:link, #site-title a:active, #site-title a:visited", "type": "color", "label": "Title color" },
 		{ "selector": "#site-title a:hover", "type": "color", "label": "Title link hover color" },
-		/* Each array of objects must end in WITHOUT a comma after the last item. This empty object is here to make duplicating lines more convenient. */
 		/* Applies to Tagline text and Tagline color */
 		{ "selector": "#site-description", "type": "text", "label": "Tagline" }, 
 		{ "selector": "#site-description", "type": "color", "label": "Tagline color" },
@@ -29,10 +11,13 @@
 	],
 	"Search Form": [
 		/* Applies to header and sidebar */
-		{ "selector": "#primary #searchform input#searchsubmit", "type": "text", "label": "Search form" },
-		{ "selector": "#primary #searchform input#searchsubmit", "type": "color", "label": "Search form color" },
-		{ "selector": "#s", "type": "background-color", "label": "Search form background color" },
-		{ "selector": "#s:focus, #secondary #s:focus", "type": "background-color", "label": "Search form focused background color" },
+		{ "selector": "#s", "type": "text", "label": "Form" },
+		{ "selector": "#s", "type": "color", "label": "Form color" },
+		{ "selector": "#s", "type": "background-color", "label": "Form background color" },
+		{ "selector": "#s:focus", "type": "background-color", "label": "Form focused background color", "important": true },
+		{ "selector": "#s", "type": "color", "label": "Form border color", "template": "$selector { border-color: $value; }" },
+		{ "selector": "#searchsubmit", "type": "text", "label": "Button" },
+		{ "selector": "#searchsubmit", "type": "color", "label": "Button color" },
 		{}
 	],
 	/* Create multiple Menu sections based on available menus in the theme. Give appropriate names based on template positions. */
