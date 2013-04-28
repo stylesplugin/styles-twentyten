@@ -6,6 +6,8 @@ Description: Add Customize options to the TwentyTen theme using the <a href="htt
 Version: 1.0
 Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
+
+Styles Class: Styles_Child_Theme
 */
 
 /**
@@ -29,8 +31,3 @@ Author URI: http://brainstormmedia.com
  * GNU General Public License for more details.
  * **********************************************************************
  */
-
-$theme_slug = 'twentyten';
-if ( ( isset( $_GET['theme'] ) && $theme_slug == $_GET['theme'] ) || ( !isset( $_GET['theme'] ) && $theme_slug == get_template() ) ) {
-	add_filter( 'styles_customize_json_file', create_function( '', 'return dirname( __FILE__ ) . \'/customize.json\';') );
-}
