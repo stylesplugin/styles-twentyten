@@ -118,18 +118,34 @@
 		{}
 	],
 	"Comment": [
-		/* Template used to remove speech bubble PNG and replace with CSS Triangle. Note use of sprintf arguement swapping: http://go.brain.st/16TeLbh */
-		{ "selector": "#comments li.comment", "type": "background-color", "label": "Background color", "template": "%1$s { background-color: %2$s; } %1$s:before { content: ''; position:absolute; width: 0px; height: 0px; border-left: 28px solid transparent; border-right: 0px solid transparent; border-top: 27px solid %2$s; }" },
-		{ "selector": "#comments .commentlist .comment-body p", "type": "text", "label": "Content" },
-		{ "selector": "#comments .commentlist .comment-body p", "type": "color", "label": "Content color" },
-		{ "selector": "#comments .commentlist .fn a", "type": "color", "label": "Link color" },
-		{ "selector": "#comments .commentlist .fn a:hover", "type": "color", "label": "Link hover color" },
+		{ "selector": "#comments .comment", "type": "background-color", "label": "Background color" },
+		{ "selector": "#comments .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": "#comments, #comments .comment-body p", "type": "color", "label": "Content color" },
+		{ "selector": "#comments a", "type": "color", "label": "Link color" },
+		{ "selector": "#comments a:hover", "type": "color", "label": "Link hover color" },
+		{}
+	],
+	"Comment: Even": [
+		{ "selector": "#comments .even", "type": "background-color", "label": "Background color" },
+		{ "selector": "#comments .even .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": "#comments .even .comment-body p", "type": "color", "label": "Content color" },
+		{ "selector": "#comments .even a", "type": "color", "label": "Link color" },
+		{ "selector": "#comments .even a:hover", "type": "color", "label": "Link hover color" },
+		{}
+	],
+	"Comment Author": [
+		{ "selector": "#comments .comment-author", "type": "text", "label": "Author" },
+		{ "selector": "#comments .comment-author", "type": "color", "label": "Author color" },
+		{ "selector": "#comments .comment-author .fn", "type": "color", "label": "Author name color" },
+		{ "selector": "#comments .comment-author .fn a", "type": "color", "label": "Author name link color" },
+		{ "selector": "#comments .comment-author .fn a:hover", "type": "color", "label": "Author name link hover color" },
 		{}
 	],
 	"Comment Meta": [
-		{ "selector": "#comments-title", "type": "text", "label": "List Title" },
-		{ "selector": "#comments .commentlist .comment-meta a", "type": "text", "label": "Meta" },
-		{ "selector": "#comments .commentlist .comment-meta a", "type": "color", "label": "Meta color" },
+		{ "selector": "#comments-title", "type": "text", "label": "List title" },
+		{ "selector": "#comments-title", "type": "color", "label": "List title color" },
+		{ "selector": "#comments .commentlist .comment-meta", "type": "text", "label": "Meta" },
+		{ "selector": "#comments .commentlist .comment-meta", "type": "color", "label": "Meta color" },
 		{ "selector": "#comments .commentlist .comment-meta a", "type": "color", "label": "Meta link color" },
 		{ "selector": "#comments .comment-meta a:hover", "type": "color", "label": "Meta link hover color" },
 		{ "selector": "#comments a.comment-reply-link", "type": "text", "label": "Reply link" },
