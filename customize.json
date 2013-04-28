@@ -27,14 +27,15 @@
 		{}
 	],
 	"Menu: Primary": [
+		/* Background */
 		{ "selector": "#access", "type": "background-color", "label": "Background color" },
-		/* Top menu items */
+		/* Top items */
 		{ "selector": "#access .menu ul", "type": "text", "label": "Top item" },
 		{ "selector": "#access .menu ul > li > a", "type": "color", "label": "Top item color" },
 		{ "selector": "#access .menu ul > li > a:hover", "type": "color", "label": "Top item hover color" },
 		{ "selector": "#access .menu ul > li > a", "type": "background-color", "label": "Top item background color" },
 		{ "selector": "#access .menu ul > li > a:hover", "type": "background-color", "label": "Top item hover background color" },
-		/* Sub menu items */
+		/* Sub items */
 		{ "selector": "#access ul ul a", "type": "text", "label": "Submenu item" },
 		{ "selector": "#access .menu ul ul > li a", "type": "color", "label": "Submenu item color" },
 		{ "selector": "#access .menu ul ul > li a:hover", "type": "color", "label": "Submenu item hover color" },
@@ -44,10 +45,13 @@
 	],
 	/* Create multiple sidebar sections if appropriate for the theme */
 	"Sidebar": [
+		/* Widget Title */
 		{ "selector": "#primary ul > li > h3", "type": "text", "label": "Widget title" },
 		{ "selector": "#primary ul > li > h3", "type": "color", "label": "Widget title color" },
+		/* Widget Content */
 		{ "selector": "#primary ul ul > li", "type": "text", "label": "Widget content" },
 		{ "selector": "#primary ul ul > li", "type": "color", "label": "Widget content color" },
+		/* Widget Link */
 		{ "selector": "#primary ul ul > li a", "type": "color", "label": "Widget link color" },
 		{ "selector": "#primary ul ul > li > a:hover", "type": "color", "label": "Widget link hover color" },
 		{}
@@ -70,6 +74,9 @@
 		{ "selector": "#content .entry-content h5", "type": "color", "label": "Heading 5 color" },
 		{ "selector": "#content .entry-content h6", "type": "text", "label": "Heading 6" },
 		{ "selector": "#content .entry-content h6", "type": "color", "label": "Heading 6 color" },
+		/* Archive Title */
+		{ "selector": ".page-title, .page-title span", "type": "text", "label": "Archive title" },
+		{ "selector": ".page-title, .page-title span", "type": "color", "label": "Archive title color" },
 		{}
 	],
 	"Entry Content": [
@@ -82,6 +89,9 @@
 		/* Lists */
 		{ "selector": ".entry-content li", "type": "text", "label": "List" },
 		{ "selector": ".entry-content li", "type": "color", "label": "List color" },
+		/* Small */
+		{ "selector": ".entry-content small", "type": "text", "label": "Small" },
+		{ "selector": ".entry-content small", "type": "color", "label": "Small color" },
 		/* Preformatted */
 		{ "selector": ".entry-content pre", "type": "text", "label": "Preformatted" },
 		{ "selector": ".entry-content pre", "type": "color", "label": "Preformatted color" },
@@ -92,20 +102,23 @@
 		/* Address */
 		{ "selector": ".entry-content address", "type": "text", "label": "Address" },
 		{ "selector": ".entry-content address", "type": "color", "label": "Address color" },
-		/* Tables */
-		{ "selector": ".entry-content table th", "type": "text", "label": "Table heading" },
-		{ "selector": ".entry-content table th", "type": "color", "label": "Table heading color" },
-		{ "selector": ".entry-content table th", "type": "background-color", "label": "Table heading background color" },
-		{ "selector": ".entry-content table td", "type": "text", "label": "Table content" },
-		{ "selector": ".entry-content table td", "type": "color", "label": "Table content color" },
-		{ "selector": ".entry-content table td", "type": "background-color", "label": "Table content background color" },
+		/* Table */
+		{ "selector": ".entry-content th", "type": "text", "label": "Table heading" },
+		{ "selector": ".entry-content th", "type": "color", "label": "Table heading color" },
+		{ "selector": ".entry-content th", "type": "background-color", "label": "Table heading background color" },
+		{ "selector": ".entry-content td, .entry-content td p", "type": "text", "label": "Table content" },
+		{ "selector": ".entry-content td, .entry-content td p", "type": "color", "label": "Table content color" },
+		{ "selector": ".entry-content td", "type": "background-color", "label": "Table content background color" },
 		{}
 	],
 	"Entry Navigation": [
+		/* Previous/Next */
 		{ "selector": "#content .navigation a", "type": "text", "label": "Previous/Next link" },
 		{ "selector": "#content .navigation a", "type": "color", "label": "Previous/Next link color" },
 		{ "selector": "#content .navigation a:hover", "type": "color", "label": "Previous/Next link hover color" },
-		{ "selector": ".page-link a", "type": "text", "label": "Paging link" },
+		/* Paging */
+		{ "selector": ".page-link, .page-link a", "type": "text", "label": "Paging" },
+		{ "selector": ".page-link", "type": "color", "label": "Paging label color" },
 		{ "selector": ".page-link a", "type": "color", "label": "Paging link color" },
 		{ "selector": ".page-link a:hover", "type": "color", "label": "Paging link hover color" },
 		{ "selector": ".page-link a", "type": "background-color", "label": "Paging link background color" },
