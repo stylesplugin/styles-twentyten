@@ -8,3 +8,5 @@
 .styles #header, .styles #main { padding-left: 20px; padding-right:20px; }
 
 #site-title, #site-description { width: auto; }
+
+.entry-utility { line-height: 1.5; }
