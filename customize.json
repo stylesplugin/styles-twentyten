@@ -83,19 +83,19 @@
 		/* Paragraph */
 		{ "selector": ".entry-content p, #respond p", "type": "text", "label": "Paragraph" },
 		{ "selector": ".entry-content p", "type": "color", "label": "Paragraph color" },
-		/* Links: Set for content and comments. Comment selection should override */
-		{ "selector": ".entry-content a, #commentform a", "type": "color", "label": "Link color" },
-		{ "selector": ".entry-content a:hover, #commentform a:hover", "type": "color", "label": "Link hover color" },
+		/* Links - Set for content and comments. Comments section should override */
+		{ "selector": ".entry-content a, #comments a", "type": "color", "label": "Link color" },
+		{ "selector": ".entry-content a:hover, #comments a:hover", "type": "color", "label": "Link hover color" },
 		/* Lists */
 		{ "selector": ".entry-content li", "type": "text", "label": "List" },
 		{ "selector": ".entry-content li", "type": "color", "label": "List color" },
 		/* Small */
 		{ "selector": ".entry-content small", "type": "text", "label": "Small" },
 		{ "selector": ".entry-content small", "type": "color", "label": "Small color" },
-		/* Preformatted */
-		{ "selector": ".entry-content pre", "type": "text", "label": "Preformatted" },
-		{ "selector": ".entry-content pre", "type": "color", "label": "Preformatted color" },
-		{ "selector": ".entry-content pre", "type": "background-color", "label": "Preformatted Background color" },
+		/* Preformatted & Code - Set for content and comments. Comments section might override */
+		{ "selector": ".entry-content pre, .comment-body pre, .entry-content code, .comment-body code", "type": "text", "label": "Preformatted & code" },
+		{ "selector": ".entry-content pre, .comment-body pre, .entry-content code, .comment-body code", "type": "color", "label": "Preformatted & code color" },
+		{ "selector": ".entry-content pre, .comment-body pre, .entry-content code, .comment-body code", "type": "background-color", "label": "Preformatted & code background color" },
 		/* Blockquote */
 		{ "selector": ".entry-content blockquote, .entry-content blockquote p", "type": "text", "label": "Blockquote" },
 		{ "selector": ".entry-content blockquote p", "type": "color", "label": "Blockquote color" },
@@ -126,10 +126,12 @@
 		{}
 	],
 	"Entry Meta": [
+		/* Meta */
 		{ "selector": ".entry-meta, .entry-utility", "type": "text", "label": "Meta" },
 		{ "selector": ".entry-meta, .entry-utility", "type": "color", "label": "Meta color" },
 		{ "selector": ".entry-meta a, .entry-utility a", "type": "color", "label": "Meta link color" },
 		{ "selector": ".entry-meta a:hover, .entry-utility a:hover", "type": "color", "label": "Meta link hover color" },
+		/* Edit link */
 		{ "selector": ".edit-link a", "type": "text", "label": "Edit link" },
 		{ "selector": ".edit-link a", "type": "color", "label": "Edit link color" },
 		{ "selector": ".edit-link a:hover", "type": "color", "label": "Edit link hover color" },
@@ -139,16 +141,26 @@
 	],
 	"Comment": [
 		{ "selector": "#comments .comment", "type": "background-color", "label": "Background color" },
-		{ "selector": "#comments .comment-body p", "type": "text", "label": "Content" },
-		{ "selector": "#comments, #comments .comment-body p", "type": "color", "label": "Content color" },
+		/* Comment content - This may need to change to effect comment meta as well */
+		{ "selector": ".comment-body, .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": ".comment-body, .comment-body p, .comment-body h1, .comment-body h2, .comment-body h3, .comment-body h4, .comment-body h5, .comment-body h6, .comment-body blockquote cite, .comment-body th, .comment-body dt", "type": "color", "label": "Content color" },
+		/* Comment link - Also set in Entry Content */
+		/* Comment link - Effects comment body and meta links. Following sections should override */
 		{ "selector": "#comments a", "type": "color", "label": "Link color" },
 		{ "selector": "#comments a:hover", "type": "color", "label": "Link hover color" },
+		/* Preformatted & Code - Also set in Entry Content  */
+		/*{ "selector": ".comment-body pre, .comment-body code", "type": "text", "label": "Preformatted & code" },*/
+		/*{ "selector": ".comment-body pre, .comment-body code", "type": "color", "label": "Preformatted & code color" },*/
+		/*{ "selector": ".comment-body pre, .comment-body code", "type": "background-color", "label": "Preformatted & code background color" },*/
 		{}
 	],
 	"Comment: Even": [
 		{ "selector": "#comments .even", "type": "background-color", "label": "Background color" },
-		{ "selector": "#comments .even .comment-body p", "type": "text", "label": "Content" },
-		{ "selector": "#comments .even .comment-body p", "type": "color", "label": "Content color" },
+		/* Comment content - This may need to change to effect comment meta as well */
+		{ "selector": ".even .comment-body, .even .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": ".even .comment-body, .even .comment-body p, .even .comment-body h1, .even .comment-body h2, .even .comment-body h3, .even .comment-body h4, .even .comment-body h5, .even .comment-body h6, .even .comment-body blockquote cite, .even .comment-body th, .even .comment-body dt", "type": "color", "label": "Content color" },
+		/* Comment link - Also set in Entry Content */
+		/* Comment link - Effects comment body and meta links. Following sections should override */
 		{ "selector": "#comments .even a", "type": "color", "label": "Link color" },
 		{ "selector": "#comments .even a:hover", "type": "color", "label": "Link hover color" },
 		{}
