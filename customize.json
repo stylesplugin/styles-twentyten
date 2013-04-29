@@ -43,17 +43,28 @@
 		{ "selector": "#access .menu ul ul > li a:hover", "type": "background-color", "label": "Submenu item hover background color" },
 		{}
 	],
-	/* Create multiple sidebar sections if appropriate for the theme */
 	"Widgets – Sidebar": [
 		/* Widget Title */
-		{ "selector": "#primary ul > li > h3", "type": "text", "label": "Title" },
-		{ "selector": "#primary ul > li > h3", "type": "color", "label": "Title color" },
+		{ "selector": "#primary .widget-title, #secondary .widget-title", "type": "text", "label": "Title" },
+		{ "selector": "#primary .widget-title, #secondary .widget-title", "type": "color", "label": "Title color" },
 		/* Widget Content */
-		{ "selector": "#primary ul ul > li", "type": "text", "label": "Content" },
-		{ "selector": "#primary ul ul > li", "type": "color", "label": "Content color" },
+		{ "selector": "#primary ul ul > li, #secondary ul ul > li", "type": "text", "label": "Content" },
+		{ "selector": "#primary ul ul > li, #secondary ul ul > li", "type": "color", "label": "Content color" },
 		/* Widget Link */
-		{ "selector": "#primary ul ul > li a", "type": "color", "label": "Link color" },
-		{ "selector": "#primary ul ul > li > a:hover", "type": "color", "label": "Link hover color" },
+		{ "selector": "#primary ul ul > li a, #secondary ul ul > li a", "type": "color", "label": "Link color" },
+		{ "selector": "#primary ul ul > li > a:hover, #secondary ul ul > li > a:hover", "type": "color", "label": "Link hover color" },
+		{}
+	],
+	"Widgets – Footer": [
+		/* Widget Title */
+		{ "selector": "#footer-widget-area .widget-title", "type": "text", "label": "Title" },
+		{ "selector": "#footer-widget-area .widget-title", "type": "color", "label": "Title color" },
+		/* Widget Content */
+		{ "selector": "#footer-widget-area .widget-area ul > li", "type": "text", "label": "Content" },
+		{ "selector": "#footer-widget-area .widget-area ul > li", "type": "color", "label": "Content color" },
+		/* Widget Link */
+		{ "selector": "#footer-widget-area .widget-area ul > li a", "type": "color", "label": "Link color" },
+		{ "selector": "#footer-widget-area .widget-area ul > li a:hover", "type": "color", "label": "Link hover color" },
 		{}
 	],
 	"Entry – Headings": [
