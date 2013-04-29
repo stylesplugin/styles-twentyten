@@ -26,7 +26,7 @@
 		{ "selector": "#searchsubmit", "type": "background-color", "label": "Button background color" },
 		{}
 	],
-	"Menu: Primary": [
+	"Menu – Primary": [
 		/* Background */
 		{ "selector": "#access", "type": "background-color", "label": "Background color" },
 		/* Top items */
@@ -44,19 +44,19 @@
 		{}
 	],
 	/* Create multiple sidebar sections if appropriate for the theme */
-	"Sidebar": [
+	"Widgets – Sidebar": [
 		/* Widget Title */
-		{ "selector": "#primary ul > li > h3", "type": "text", "label": "Widget title" },
-		{ "selector": "#primary ul > li > h3", "type": "color", "label": "Widget title color" },
+		{ "selector": "#primary ul > li > h3", "type": "text", "label": "Title" },
+		{ "selector": "#primary ul > li > h3", "type": "color", "label": "Title color" },
 		/* Widget Content */
-		{ "selector": "#primary ul ul > li", "type": "text", "label": "Widget content" },
-		{ "selector": "#primary ul ul > li", "type": "color", "label": "Widget content color" },
+		{ "selector": "#primary ul ul > li", "type": "text", "label": "Content" },
+		{ "selector": "#primary ul ul > li", "type": "color", "label": "Content color" },
 		/* Widget Link */
-		{ "selector": "#primary ul ul > li a", "type": "color", "label": "Widget link color" },
-		{ "selector": "#primary ul ul > li > a:hover", "type": "color", "label": "Widget link hover color" },
+		{ "selector": "#primary ul ul > li a", "type": "color", "label": "Link color" },
+		{ "selector": "#primary ul ul > li > a:hover", "type": "color", "label": "Link hover color" },
 		{}
 	],
-	"Entry Headings": [
+	"Entry – Headings": [
 		/* Title */
 		{ "selector": ".entry-title, .entry-title a", "type": "text", "label": "Title" },
 		{ "selector": ".entry-title, .entry-title a", "type": "color", "label": "Title color" },
@@ -79,7 +79,7 @@
 		{ "selector": ".page-title, .page-title span", "type": "color", "label": "Archive title color" },
 		{}
 	],
-	"Entry Content": [
+	"Entry – Content": [
 		/* Paragraph */
 		{ "selector": ".entry-content p, #respond p", "type": "text", "label": "Paragraph" },
 		{ "selector": ".entry-content p", "type": "color", "label": "Paragraph color" },
@@ -111,7 +111,7 @@
 		{ "selector": ".entry-content td", "type": "background-color", "label": "Table content background color" },
 		{}
 	],
-	"Entry Navigation": [
+	"Entry – Navigation": [
 		/* Previous/Next */
 		{ "selector": "#content .navigation a", "type": "text", "label": "Previous/Next link" },
 		{ "selector": "#content .navigation a", "type": "color", "label": "Previous/Next link color" },
@@ -125,7 +125,7 @@
 		{ "selector": ".page-link a:hover", "type": "background-color", "label": "Paging link hover background color" },
 		{}
 	],
-	"Entry Meta": [
+	"Entry – Meta": [
 		/* Meta */
 		{ "selector": ".entry-meta, .entry-utility", "type": "text", "label": "Meta" },
 		{ "selector": ".entry-meta, .entry-utility", "type": "color", "label": "Meta color" },
@@ -139,7 +139,7 @@
 		{ "selector": ".edit-link a:hover", "type": "background-color", "label": "Edit link hover background color" },
 		{}
 	],
-	"Comment": [
+	"Comments – Content": [
 		{ "selector": "#comments .comment", "type": "background-color", "label": "Background color" },
 		/* Comment content - This may need to change to effect comment meta as well */
 		{ "selector": ".comment-body, .comment-body p", "type": "text", "label": "Content" },
@@ -154,7 +154,7 @@
 		/*{ "selector": ".comment-body pre, .comment-body code", "type": "background-color", "label": "Preformatted & code background color" },*/
 		{}
 	],
-	"Comment: Even": [
+	"Comments – Content (Even)": [
 		{ "selector": "#comments .even", "type": "background-color", "label": "Background color" },
 		/* Comment content - This may need to change to effect comment meta as well */
 		{ "selector": ".even .comment-body, .even .comment-body p", "type": "text", "label": "Content" },
@@ -165,7 +165,7 @@
 		{ "selector": "#comments .even a:hover", "type": "color", "label": "Link hover color" },
 		{}
 	],
-	"Comment Author": [
+	"Comments – Author": [
 		{ "selector": "#comments .comment-author", "type": "text", "label": "Author" },
 		{ "selector": "#comments .comment-author", "type": "color", "label": "Author color" },
 		{ "selector": "#comments .comment-author .fn", "type": "color", "label": "Author name color" },
@@ -173,7 +173,7 @@
 		{ "selector": "#comments .comment-author .fn a:hover", "type": "color", "label": "Author name link hover color" },
 		{}
 	],
-	"Comment Meta": [
+	"Comments – Meta": [
 		{ "selector": "#comments-title", "type": "text", "label": "List title" },
 		{ "selector": "#comments-title", "type": "color", "label": "List title color" },
 		{ "selector": "#comments .commentlist .comment-meta", "type": "text", "label": "Meta" },
@@ -187,7 +187,7 @@
 		{ "selector": "#comments a.comment-reply-link:hover", "type": "background-color", "label": "Reply link hover background color" },
 		{}
 	],
-	"Comment Response": [
+	"Comments – Response Form": [
 		{ "selector": "#respond", "type": "border-top-color", "label": "Top border color" },
 		{ "selector": "#respond", "type": "background-color", "label": "Background color" },
 		{ "selector": "#respond #reply-title", "type": "text", "label": "Title" },
