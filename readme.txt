@@ -1,4 +1,4 @@
-=== Styles — TwentyTen ===
+=== Styles: TwentyTen ===
 Contributors: brainstormmedia, pdclark, elusivelight
 Plugin URI: http://stylesplugin.com
 Author URI: http://brainstormmedia.com
