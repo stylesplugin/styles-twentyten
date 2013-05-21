@@ -6,7 +6,6 @@ Description: Add Customize options to the TwentyTen theme using the <a href="htt
 Version: 1.0
 Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
-
 Styles Class: Styles_Child_Theme
 */
 
