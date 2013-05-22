@@ -18,9 +18,9 @@
 		{ "selector": "#site-title a", "type": "text", "label": "Title" },
 		{ "selector": "#site-title a:link, #site-title a:active, #site-title a:visited", "type": "color", "label": "Title" },
 		{ "selector": "#site-title a:hover", "type": "color", "label": "Title" },
-		/* Description */
-		{ "selector": "#site-description", "type": "text", "label": "Description" }, 
-		{ "selector": "#site-description", "type": "color", "label": "Description" },
+		/* Tagline */
+		{ "selector": "#site-description", "type": "text", "label": "Tagline" }, 
+		{ "selector": "#site-description", "type": "color", "label": "Tagline" },
 		{}
 	],
 	"Search Form": [
