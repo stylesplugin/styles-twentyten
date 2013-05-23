@@ -155,7 +155,7 @@
 	],
 	"Entry – Meta": [
 		/* Meta */
-		{ "selector": ".entry-meta, .entry-utility", "type": "text", "label": "Meta" },
+		{ "selector": ".entry-meta, .entry-utility, .entry-meta a, .entry-utility a", "type": "text", "label": "Meta" },
 		{ "selector": ".entry-meta, .entry-utility", "type": "color", "label": "Meta" },
 		{ "selector": ".entry-meta a, .entry-utility a", "type": "color", "label": "Meta link" },
 		{ "selector": ".entry-meta a:hover, .entry-utility a:hover", "type": "color", "label": "Meta link" },
