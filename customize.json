@@ -22,7 +22,7 @@
 		{ "selector": "#site-description", "type": "text", "label": "Tagline" }, 
 		{ "selector": "#site-description", "type": "color", "label": "Tagline" },
 		/* Image */
-		{ "selector": "#site-title img", "type": "border-color", "label": "Image" },
+		{ "selector": "#branding img", "type": "border-color", "label": "Image" },
 		{}
 	],
 	"Search Form": [
