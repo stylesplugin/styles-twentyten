@@ -264,11 +264,11 @@
 		{ "selector": "#footer", "type": "background-color", "label": "Area" },
 		{ "selector": "#colophon", "type": "border-top-color", "label": "Area" },
 		/* Content */
-		{ "selector": "#footer, #site-info", "type": "text", "label": "Footer" },
+		{ "selector": "#footer, #site-info, #footer a, #site-info a", "type": "text", "label": "Footer" },
 		{ "selector": "#footer a", "type": "color", "label": "Footer link" },
 		{ "selector": "#footer a:hover", "type": "color", "label": "Footer link" },
 		/* Credit */
-		{ "selector": "#site-generator", "type": "text", "label": "Credit" },
+		{ "selector": "#site-generator, #site-generator a", "type": "text", "label": "Credit" },
 		{ "selector": "#site-generator a", "type": "color", "label": "Credit link" },
 		{ "selector": "#site-generator a:hover", "type": "color", "label": "Credit link" },
 		{}
