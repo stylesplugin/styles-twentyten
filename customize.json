@@ -44,17 +44,17 @@
 		/* Background */
 		{ "selector": "#access", "type": "background-color", "label": "Area" },
 		/* Top items */
-		{ "selector": "#access .menu ul", "type": "text", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a", "type": "color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a:hover", "type": "color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a", "type": "background-color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a:hover", "type": "background-color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "text", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a:hover", "type": "color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "background-color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a:hover", "type": "background-color", "label": "Top item" },
 		/* Sub items */
 		{ "selector": "#access ul ul a", "type": "text", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a", "type": "color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a:hover", "type": "color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a", "type": "background-color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a:hover", "type": "background-color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a", "type": "color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a:hover", "type": "color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a", "type": "background-color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a:hover", "type": "background-color", "label": "Submenu item" },
 		{}
 	],
 	"Widgets – Sidebar": [
