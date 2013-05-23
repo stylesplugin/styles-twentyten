@@ -183,14 +183,14 @@
 		{}
 	],
 	"Comments – Content (Even)": [
-		{ "selector": "#comments .even", "type": "background-color", "label": "Area" },
+		{ "selector": "#comments .odd", "type": "background-color", "label": "Area" },
 		/* Comment content    - This may need to change to effect comment meta as well */
-		{ "selector": ".even .comment-body, .even .comment-body p", "type": "text", "label": "Content" },
-		{ "selector": ".even .comment-body, .even .comment-body p, .even .comment-body h1, .even .comment-body h2, .even .comment-body h3, .even .comment-body h4, .even .comment-body h5, .even .comment-body h6, .even .comment-body blockquote cite, .even .comment-body th, .even .comment-body dt", "type": "color", "label": "Content" },
+		{ "selector": ".odd .comment-body, .odd .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": ".odd .comment-body, .odd .comment-body p, .odd .comment-body h1, .odd .comment-body h2, .odd .comment-body h3, .odd .comment-body h4, .odd .comment-body h5, .odd .comment-body h6, .odd .comment-body blockquote cite, .odd .comment-body th, .odd .comment-body dt", "type": "color", "label": "Content" },
 		/* Comment link    - Also set in Entry Content 
 		                   - Affects comment content and meta links. Following sections should override */
-		{ "selector": "#comments .even a", "type": "color", "label": "Link" },
-		{ "selector": "#comments .even a:hover", "type": "color", "label": "Link" },
+		{ "selector": "#comments .odd a", "type": "color", "label": "Link" },
+		{ "selector": "#comments .odd a:hover", "type": "color", "label": "Link" },
 		{}
 	],
 	"Comments – Author": [
