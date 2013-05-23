@@ -83,9 +83,9 @@
 	],
 	"Entry – Headings": [
 		/* Title */
-		{ "selector": ".entry-title, .entry-title a", "type": "text", "label": "Title" },
-		{ "selector": ".entry-title, .entry-title a", "type": "color", "label": "Title" },
-		{ "selector": ".entry-title, .entry-title a:hover", "type": "color", "label": "Title link" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a", "type": "text", "label": "Title" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a", "type": "color", "label": "Title" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a:hover", "type": "color", "label": "Title link" },
 		/* Headers */
 		{ "selector": "#content .entry-content h1", "type": "text", "label": "Heading 1" },
 		{ "selector": "#content .entry-content h1", "type": "color", "label": "Heading 1" },
@@ -155,16 +155,16 @@
 	],
 	"Entry – Meta": [
 		/* Meta */
-		{ "selector": ".entry-meta, .entry-utility, .entry-meta a, .entry-utility a", "type": "text", "label": "Meta" },
-		{ "selector": ".entry-meta, .entry-utility", "type": "color", "label": "Meta" },
-		{ "selector": ".entry-meta a, .entry-utility a", "type": "color", "label": "Meta link" },
-		{ "selector": ".entry-meta a:hover, .entry-utility a:hover", "type": "color", "label": "Meta link" },
+		{ "selector": "#wrapper .entry-meta, #wrapper .entry-utility, #wrapper .entry-meta a, #wrapper .entry-utility a", "type": "text", "label": "Meta" },
+		{ "selector": "#wrapper .entry-meta, #wrapper .entry-utility", "type": "color", "label": "Meta" },
+		{ "selector": "#wrapper .entry-meta a, #wrapper .entry-utility a", "type": "color", "label": "Meta link" },
+		{ "selector": "#wrapper .entry-meta a:hover, #wrapper .entry-utility a:hover", "type": "color", "label": "Meta link" },
 		/* Edit link */
-		{ "selector": ".edit-link a", "type": "text", "label": "Edit link" },
-		{ "selector": ".edit-link a", "type": "color", "label": "Edit link" },
-		{ "selector": ".edit-link a:hover", "type": "color", "label": "Edit link" },
-		{ "selector": ".edit-link a", "type": "background-color", "label": "Edit link" },
-		{ "selector": ".edit-link a:hover", "type": "background-color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "text", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a:hover", "type": "color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "background-color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a:hover", "type": "background-color", "label": "Edit link" },
 		{}
 	],
 	"Comments – Content": [
