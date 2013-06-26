@@ -21,6 +21,8 @@
 		/* Tagline */
 		{ "selector": "#site-description", "type": "text", "label": "Tagline" }, 
 		{ "selector": "#site-description", "type": "color", "label": "Tagline" },
+		/* Image */
+		{ "selector": "#branding img", "type": "border-color", "label": "Image" },
 		{}
 	],
 	"Search Form": [
@@ -42,17 +44,17 @@
 		/* Background */
 		{ "selector": "#access", "type": "background-color", "label": "Area" },
 		/* Top items */
-		{ "selector": "#access .menu ul", "type": "text", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a", "type": "color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a:hover", "type": "color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a", "type": "background-color", "label": "Top item" },
-		{ "selector": "#access .menu ul > li > a:hover", "type": "background-color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "text", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a:hover", "type": "color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a", "type": "background-color", "label": "Top item" },
+		{ "selector": "#access ul.menu > li > a:hover", "type": "background-color", "label": "Top item" },
 		/* Sub items */
 		{ "selector": "#access ul ul a", "type": "text", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a", "type": "color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a:hover", "type": "color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a", "type": "background-color", "label": "Submenu item" },
-		{ "selector": "#access .menu ul ul > li a:hover", "type": "background-color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a", "type": "color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a:hover", "type": "color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a", "type": "background-color", "label": "Submenu item" },
+		{ "selector": "#access ul.menu ul > li a:hover", "type": "background-color", "label": "Submenu item" },
 		{}
 	],
 	"Widgets – Sidebar": [
@@ -81,9 +83,9 @@
 	],
 	"Entry – Headings": [
 		/* Title */
-		{ "selector": ".entry-title, .entry-title a", "type": "text", "label": "Title" },
-		{ "selector": ".entry-title, .entry-title a", "type": "color", "label": "Title" },
-		{ "selector": ".entry-title, .entry-title a:hover", "type": "color", "label": "Title link" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a", "type": "text", "label": "Title" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a", "type": "color", "label": "Title" },
+		{ "selector": "#wrapper .entry-title, #wrapper .entry-title a:hover", "type": "color", "label": "Title link" },
 		/* Headers */
 		{ "selector": "#content .entry-content h1", "type": "text", "label": "Heading 1" },
 		{ "selector": "#content .entry-content h1", "type": "color", "label": "Heading 1" },
@@ -153,16 +155,16 @@
 	],
 	"Entry – Meta": [
 		/* Meta */
-		{ "selector": ".entry-meta, .entry-utility", "type": "text", "label": "Meta" },
-		{ "selector": ".entry-meta, .entry-utility", "type": "color", "label": "Meta" },
-		{ "selector": ".entry-meta a, .entry-utility a", "type": "color", "label": "Meta link" },
-		{ "selector": ".entry-meta a:hover, .entry-utility a:hover", "type": "color", "label": "Meta link" },
+		{ "selector": "#wrapper .entry-meta, #wrapper .entry-utility, #wrapper .entry-meta a, #wrapper .entry-utility a", "type": "text", "label": "Meta" },
+		{ "selector": "#wrapper .entry-meta, #wrapper .entry-utility", "type": "color", "label": "Meta" },
+		{ "selector": "#wrapper .entry-meta a, #wrapper .entry-utility a", "type": "color", "label": "Meta link" },
+		{ "selector": "#wrapper .entry-meta a:hover, #wrapper .entry-utility a:hover", "type": "color", "label": "Meta link" },
 		/* Edit link */
-		{ "selector": ".edit-link a", "type": "text", "label": "Edit link" },
-		{ "selector": ".edit-link a", "type": "color", "label": "Edit link" },
-		{ "selector": ".edit-link a:hover", "type": "color", "label": "Edit link" },
-		{ "selector": ".edit-link a", "type": "background-color", "label": "Edit link" },
-		{ "selector": ".edit-link a:hover", "type": "background-color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "text", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a:hover", "type": "color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a", "type": "background-color", "label": "Edit link" },
+		{ "selector": "#wrapper .edit-link a:hover", "type": "background-color", "label": "Edit link" },
 		{}
 	],
 	"Comments – Content": [
@@ -181,14 +183,14 @@
 		{}
 	],
 	"Comments – Content (Even)": [
-		{ "selector": "#comments .even", "type": "background-color", "label": "Area" },
+		{ "selector": "#comments .odd", "type": "background-color", "label": "Area" },
 		/* Comment content    - This may need to change to effect comment meta as well */
-		{ "selector": ".even .comment-body, .even .comment-body p", "type": "text", "label": "Content" },
-		{ "selector": ".even .comment-body, .even .comment-body p, .even .comment-body h1, .even .comment-body h2, .even .comment-body h3, .even .comment-body h4, .even .comment-body h5, .even .comment-body h6, .even .comment-body blockquote cite, .even .comment-body th, .even .comment-body dt", "type": "color", "label": "Content" },
+		{ "selector": ".odd .comment-body, .odd .comment-body p", "type": "text", "label": "Content" },
+		{ "selector": ".odd .comment-body, .odd .comment-body p, .odd .comment-body h1, .odd .comment-body h2, .odd .comment-body h3, .odd .comment-body h4, .odd .comment-body h5, .odd .comment-body h6, .odd .comment-body blockquote cite, .odd .comment-body th, .odd .comment-body dt", "type": "color", "label": "Content" },
 		/* Comment link    - Also set in Entry Content 
 		                   - Affects comment content and meta links. Following sections should override */
-		{ "selector": "#comments .even a", "type": "color", "label": "Link" },
-		{ "selector": "#comments .even a:hover", "type": "color", "label": "Link" },
+		{ "selector": "#comments .odd a", "type": "color", "label": "Link" },
+		{ "selector": "#comments .odd a:hover", "type": "color", "label": "Link" },
 		{}
 	],
 	"Comments – Author": [
@@ -262,11 +264,11 @@
 		{ "selector": "#footer", "type": "background-color", "label": "Area" },
 		{ "selector": "#colophon", "type": "border-top-color", "label": "Area" },
 		/* Content */
-		{ "selector": "#footer, #site-info", "type": "text", "label": "Footer" },
+		{ "selector": "#footer, #site-info, #footer a, #site-info a", "type": "text", "label": "Footer" },
 		{ "selector": "#footer a", "type": "color", "label": "Footer link" },
 		{ "selector": "#footer a:hover", "type": "color", "label": "Footer link" },
 		/* Credit */
-		{ "selector": "#site-generator", "type": "text", "label": "Credit" },
+		{ "selector": "#site-generator, #site-generator a", "type": "text", "label": "Credit" },
 		{ "selector": "#site-generator a", "type": "color", "label": "Credit link" },
 		{ "selector": "#site-generator a:hover", "type": "color", "label": "Credit link" },
 		{}
