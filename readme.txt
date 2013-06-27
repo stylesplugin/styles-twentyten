@@ -5,7 +5,7 @@ Author URI: http://brainstormmedia.com
 Tags: css, stylesheet, appearance, customize, customizer, colors, color picker, background, fonts, google fonts, user interface, 2010, twenty ten
 Requires at least: 3.4
 Tested up to: 3.5.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 Be creative with colors and fonts. Styles changes everything.
 
@@ -14,6 +14,8 @@ Be creative with colors and fonts. Styles changes everything.
 This plugin adds suport for the TwentyTen theme to the [Styles plugin](http://wordpress.org/extend/plugins/styles).
 
 [Try a demo in TwentyTen](http://demo.stylesplugin.com/twentyten).
+
+http://youtu.be/CpKiZEqpcr8
 
 **About Styles**
 
@@ -89,6 +91,9 @@ If you would like to sell your add-on at [stylesplugin.com](http://stylesplugin.
 No! Styles is very careful about only loading what is needed to get its job done. Once you're done editing, stylesheets are cached and loaded for your sites users as quickly as possible.
 
 == Changelog ==
+
+= 1.0.3 =
+* Fix: (Minor) Prevent multiple notices from being displayed if several Styles child plugins are active and requesting changes.
 
 = 1.0.2 =
 
