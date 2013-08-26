@@ -3,7 +3,7 @@
 Plugin Name: Styles: TwentyTen
 Plugin URI: http://stylesplugin.com
 Description: Add Customize options to the TwentyTen theme using the <a href="http://wordpress.org/extend/plugins/styles/" target="_blank">Styles plugin</a>.
-Version: 1.0.3
+Version: 1.0.4
 Author: Brainstorm Media
 Author URI: http://brainstormmedia.com
 
